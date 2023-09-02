@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Clone | Html css & javascript</title>
+    <link rel="shortcut icon" href="./imgs/facebook-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/9c7165a660.js" crossorigin="anonymous"></script>
+    <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a href="/"><img src="./imgs/fb.png" alt="lOGO" class="logo"></a>
+                <ul>
+                    <li><img src="./imgs/notification.png" alt=""></li>
+                    <li><img src="./imgs/inbox.png" alt=""></li>
+                    <li><img src="./imgs/video.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <div class="search-box">
+                    <img src="./imgs/search.png" alt="">
+                    <input type="text" placeholder=" Search ">
+                </div>
+                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                    <img src="./imgs/profile-pic.jpeg" alt="">
+                </div>
+            </div>
+
+            <!-- User dropdown  -->
+
+            <div class="settings-menu">
+
+                <div id="dark-btn">
+                    <span></span>
+                </div>
+
+
+                <div class="settings-menu-inner">
+                    <div class="user-profile">
+                        <img src="./imgs/profile-pic.jpeg" alt="">
+                        <div>
+                            <p> Calix Archer </p>
+                            <a href="index.html"> See your profile </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="user-profile">
+                        <img src="./imgs/feedback.png" alt="">
+                        <div>
+                            <p> Give Feedback </p>
+                            <a href="#"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, at? </a>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <div class="settings-links">
+                        <img src="./imgs/setting.png" class="settings-icon" alt="">
+                        <a href="#"> Settings & Privacy <img src="./imgs/arrow.png" width="10px" alt=""></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="./imgs/help.png" class="settings-icon" alt="">
+                        <a href="#"> Help & Support <img src="./imgs/arrow.png" width="10px" alt=""></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="./imgs/display.png" class="settings-icon" alt="">
+                        <a href="#"> Display & Access <img src="./imgs/arrow.png" width="10px" alt=""></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="./imgs/logout.png" class="settings-icon" alt="">
+                        <a href="#"> Logout <img src="./imgs/arrow.png" width="10px" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Header ends -->
+
+    <!-- Main body starts here -->
+
+    <div class="container">
+
+        <!-- Left slidebar -->
+
+        <div class="left-slidebar">
+            <div class="imp-links">
+                <a href="#"><img src="./imgs/news.png" alt=""> Latest News </a>
+                <a href="#"><img src="./imgs/friends.png" alt=""> Friends </a>
+                <a href="#"><img src="./imgs/group.png" alt=""> Group </a>
+                <a href="#"><img src="./imgs/marketplace.png" alt=""> Marketplace </a>
+                <a href="#"><img src="./imgs/watch.png" alt=""> Watch </a>
+                <a href="#"> See More </a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="./imgs/shortcut-1.jpeg" alt=""> Chatbot Development </a>
+                <a href="#"><img src="./imgs/shortcut-2.jpeg" alt=""> Web Design </a>
+                <a href="#"><img src="./imgs/shortcut-3.jpeg" alt=""> Website Development </a>
+                <a href="#"><img src="./imgs/shortcut-4.jpeg" alt=""> Telegram Bot</a>
+                <a href="#"><img src="./imgs/shortcut-5.jpeg" alt=""> Facebook Messenger Bot</a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story-1">
+                    <img src="./imgs/upload.png" alt="">
+                    <p> Post Story </p>
+                </div>
+                <div class="story story-2">
+                    <img src="./imgs/member1.jpeg" alt="">
+                    <p> John </p>
+                </div>
+                <div class="story story-3">
+                    <img src="./imgs/member2.jpeg" alt="">
+                    <p> Danny </p>
+                </div>
+                <div class="story story-4">
+                    <img src="./imgs/member3.jpeg" alt="">
+                    <p> Sarah </p>
+                </div>
+                <div class="story story-5">
+                    <img src="./imgs/member4.jpeg" alt="">
+                    <p> David </p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="./imgs/profile-pic.jpeg" alt="">
+                    <div>
+                        <p> Calix Archer </p>
+                        <small> Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder=" What's on your mind, John?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="./imgs/live-video.png" alt=""> Live Video </a>
+                        <a href="#"><img src="./imgs/photo.png" alt=""> Photo/Video </a>
+                        <a href="#"><img src="./imgs/feeling.png" alt=""> Feeling/Activity </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./imgs/member-8.png" alt="">
+                        <div>
+                            <p> john victor </p>
+                            <span> August 01 2023 , 2:30 PM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias sunt tenetur beatae necessitatibus, fugit harum non debitis laborum quos maxime incidunt quaerat voluptatem, placeat cumque atque aut nisi? Molestiae, quisquam.<a href="#">#GitHub #LinkedIn</a></p>
+                <img src="./imgs/feed-img1.jpg" alt="post" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./imgs/like-blue.png" alt=""> 190 </div>
+                        <div><img src="./imgs/comments.png" alt=""> 86 </div>
+                        <div><img src="./imgs/share.png" alt=""> 13 </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./imgs/member-2.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./imgs/member1.png" alt="">
+                        <div>
+                            <p> Alex morne</p>
+                            <span> july 30 2023 , 4:39 PM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odio reprehenderit vero mollitia ex minus impedit sapiente aliquam eveniet quaerat, quam ut magni necessitatibus dolor. Minus cupiditate placeat ratione nostrum?<a href="#">#Friends #Songs</a></p>
+                <img src="./imgs/feed-img2.jpg" alt="post" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./imgs/like.png" alt=""> 208 </div>
+                        <div><img src="./imgs/comments.png" alt=""> 63 </div>
+                        <div><img src="./imgs/share.png" alt=""> 19 </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./imgs/member3.jpeg" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./imgs/member4.jpeg" alt="">
+                        <div>
+                            <p> linda joseph </p>
+                            <span> July 11 2023 , 11:58 PM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut rem nisi inventore omnis doloremque minima asperiores, provident vitae, laudantium eveniet odit ipsa!</p>
+                <img src="./imgs/feed-img3.jpg" alt="post" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./imgs/like.png" alt=""> 108 </div>
+                        <div><img src="./imgs/comments.png" alt=""> 26 </div>
+                        <div><img src="./imgs/share.png" alt=""> 5 </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./imgs/member1.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./imgs/member-6.png" alt="">
+                        <div>
+                            <p> Sarah Pualson </p>
+                            <span> June 24 2023 , 1:30 AM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit laboriosam temporibus vel culpa, maxime amet fugit veritatis at omnis?/a></p>
+                <img src="./imgs/feed-img4.jpg" alt="post" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./imgs/like.png" alt=""> 150 </div>
+                        <div><img src="./imgs/comments.png" alt=""> 42 </div>
+                        <div><img src="./imgs/share.png" alt=""> 24 </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./imgs/member-5.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./imgs/member-2.png" alt="">
+                        <div>
+                            <p> Harry Benjamin </p>
+                            <span> April 28 2023 , 8:24 AM </span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi quasi minima ratione sequi fugit modi alias. Repellendus, saepe? Odit repudiandae est ipsum quaerat quod soluta mollitia aut corporis repellendus. Amet, nisi?</p>
+                <img src="./imgs/feed-img5.jpg" alt="post" class="post-img">
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="./imgs/like.png" alt=""> 308 </div>
+                        <div><img src="./imgs/comments.png" alt=""> 82 </div>
+                        <div><img src="./imgs/share.png" alt=""> 21 </div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="./imgs/member-6.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn"> Load More </button>
+
+        </div>
+
+        <!-- Right slidebar -->
+
+        <div class="right-slidebar">
+            <div class="slidebar-title">
+                <h4> Events </h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>20</h3>
+                    <span>july</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>Lorem ipsum dolor sit.</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>19</h3>
+                    <span>september</span>
+                </div>
+                <div class="right-event">
+                    <h4>Lorem, ipsum.</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Lorem ipsum dolor sit amet.</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="slidebar-title">
+                <h4> Advertisement </h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="./imgs/advertisement.avif" alt="Ads" class="slidebar-ads">
+
+            <!-- ---------- Conversation chat seciton ------------------- -->
+
+            <div class="slidebar-title">
+                <h4> Conversation </h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="./imgs/member-6.png" alt="">
+                </div>
+                <p> Alison Aly </p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./imgs/member-8.png" alt="">
+                </div>
+                <p> Sarah Phaulson </p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="./imgs/member-7.png" alt="">
+                </div>
+                <p> Alexis Grace </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; Copyright 2023-FacebookClone.com All right Reserved
+    </footer>
+</body>
+
+</html>
